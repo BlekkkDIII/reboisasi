@@ -23,7 +23,7 @@ while tl > 0:
     while ct > 0:
         f = open("commit.txt", "a+")
         l_date = now + datetime.timedelta(days=-pointer)
-        formatdate = l_date.strftime("%Y-%m-%d")
+        formatdate = l_date.strftime("1945-%m-%d")
         f.write(f"commit ke {ctr}: {formatdate}\n")
         f.close()
         os.system("git add .")
